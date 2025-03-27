@@ -7,9 +7,9 @@ from scripts.feature_extraction import extract_features_from_url
 app = Flask(__name__, template_folder='custom_templates')
 
 # Load models and scaler
-rf_model = pickle.load(open('models/phishing_gb.pkl', 'rb'))
-gb_model = pickle.load(open('models/phishing_rf.pkl', 'rb'))
-scaler = pickle.load(open('models/scaler.pkl', 'rb'))
+rf_model = pickle.load(open('models\phishing_gb.pkl', 'rb'))
+gb_model = pickle.load(open('models\phishing_rf.pkl', 'rb'))
+scaler = pickle.load(open('models\scaler.pkl', 'rb'))
 
 @app.route('/')
 def home():
