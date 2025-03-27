@@ -2,9 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 from sklearn.preprocessing import StandardScaler
 from scripts.feature_extraction import extract_features_from_url
-import os
-print(os.getcwd()) 
-print(os.listdir('custom_templates'))  
+
 
 app = Flask(__name__, template_folder='custom_templates')
 
